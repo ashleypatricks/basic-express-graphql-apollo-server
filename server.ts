@@ -47,13 +47,11 @@ const apolloServer = new ApolloServer({
       user: new Dataloader(keys => batchUsers(keys)),
     };
 
-    console.log('Context Object');
-    console.log(contextObj);
     return contextObj;
   },
   formatError: error => {
     console.log(error);
-    return error; //This did not work the way we expected. The message part is not included in the error response.
+    return error;
   },
 });
 
