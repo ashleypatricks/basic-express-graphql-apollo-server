@@ -20,6 +20,8 @@ As mentioned above, you need to have an instance of mongdb running. You can set 
 yarn start OR npm run start
 ```
 
+The GraphQL server can be found at http://localhost:3001/graphql
+
 ## Errata
 
 If anything breaks or does not work as expected please contact me for a fix.

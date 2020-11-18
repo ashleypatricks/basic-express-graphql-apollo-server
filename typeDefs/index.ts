@@ -2,7 +2,6 @@ import { gql } from 'apollo-server-express';
 
 import { userTypeDefs } from './user';
 import { taskTypeDefs } from './task';
-import { accountTypeDefs } from './account';
 
 const typeDefs = gql`
   scalar Date
@@ -20,6 +19,6 @@ const typeDefs = gql`
   }
 `;
 
-const rootTypeDefs = [typeDefs, userTypeDefs, taskTypeDefs, accountTypeDefs];
+const rootTypeDefs = [typeDefs, userTypeDefs, taskTypeDefs];
 
 export { rootTypeDefs };
